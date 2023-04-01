@@ -23,7 +23,7 @@ class ApiClient {
       }
 }
 const API = new ApiClient(
-    process.env.REACT_APP_REMOTE_HOST_URL || "http://192.168.1.11:3030"
+    process.env.REACT_APP_REMOTE_HOST_URL || "http://192.168.1.15:3030"
 );
   
   export default API;
