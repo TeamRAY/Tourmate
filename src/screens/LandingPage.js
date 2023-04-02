@@ -16,7 +16,7 @@ const LandingPage = () => {
                 </TouchableOpacity> 
 
                 <View style={globalStyles.alreadyContainer}>
-                    <Text style={globalStyles.smallText}>Already a registered driver?</Text>
+                    <Text style={globalStyles.smallText}>Already have an account?</Text>
                     <TouchableOpacity style={globalStyles.button2}>
                         <Text style={globalStyles.button2Text}>Sign In</Text>
                     </TouchableOpacity>

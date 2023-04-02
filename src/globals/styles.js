@@ -1,52 +1,8 @@
 import { StatusBar,Dimensions,StyleSheet } from 'react-native';
 const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBar.currentHeight;
 
-import {
-    Poppins_100Thin,
-    Poppins_100Thin_Italic,
-    Poppins_200ExtraLight,
-    Poppins_200ExtraLight_Italic,
-    Poppins_300Light,
-    Poppins_300Light_Italic,
-    Poppins_400Regular,
-    Poppins_400Regular_Italic,
-    Poppins_500Medium,
-    Poppins_500Medium_Italic,
-    Poppins_600SemiBold,
-    Poppins_600SemiBold_Italic,
-    Poppins_700Bold,
-    Poppins_700Bold_Italic,
-    Poppins_800ExtraBold,
-    Poppins_800ExtraBold_Italic,
-    Poppins_900Black,
-    Poppins_900Black_Italic,
-  } from '@expo-google-fonts/poppins';
 
-//   export default () => {
-//     let [fontsLoaded] = useFonts({
-//       Poppins_100Thin,
-//       Poppins_100Thin_Italic,
-//       Poppins_200ExtraLight,
-//       Poppins_200ExtraLight_Italic,
-//       Poppins_300Light,
-//       Poppins_300Light_Italic,
-//       Poppins_400Regular,
-//       Poppins_400Regular_Italic,
-//       Poppins_500Medium,
-//       Poppins_500Medium_Italic,
-//       Poppins_600SemiBold,
-//       Poppins_600SemiBold_Italic,
-//       Poppins_700Bold,
-//       Poppins_700Bold_Italic,
-//       Poppins_800ExtraBold,
-//       Poppins_800ExtraBold_Italic,
-//       Poppins_900Black,
-//       Poppins_900Black_Italic,
-//     });
-// }
-// export const fonts={
-//     bold:
-// }
+
 
 export const colors={
     ThemeBlack:'#111111',
@@ -108,6 +64,32 @@ export const globalStyles = StyleSheet.create({
         alignSelf:'center',
         marginRight:10
     },
+    backBtnContainer:{
+        width:parameters.SCREEN_WIDTH,
+        height:80,
+        display:"flex",
+        padding:15,
+        justifyContent:"center"
+
+    },
+    backBtn:{
+        width:25,
+        height:20
+    },
+    input: {
+        borderColor: "#F1F2F3",
+        borderWidth: 1,
+        padding:15,
+        paddingLeft:20,
+        borderRadius: 50,
+        marginBottom:10,
+        height:60,
+        backgroundColor:"#F1F2F3"
+    },
+    txtInputIcon:{
+        width:20,
+        height:20
+    }
 })
 
 // export const mapStyle=[

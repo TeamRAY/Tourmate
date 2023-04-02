@@ -15,7 +15,9 @@
     "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "0.71.4",
-    "react-native-web": "~0.18.11"
+    "react-native-web": "~0.18.11",
+    "undefined": "react-native-vector-icons/FontAwesome",
+    "@expo/vector-icons": "^13.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
