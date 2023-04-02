@@ -9,13 +9,15 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "^1.0.0",
+    "@expo-google-fonts/poppins": "^0.2.3",
+    "expo": "^46.0.1",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "0.71.4",
-    "react-native-status-bar-height": "^2.6.0",
-    "react-native-web": "~0.18.11"
+    "react-native-web": "~0.18.11",
+    "undefined": "react-native-vector-icons/FontAwesome",
+    "@expo/vector-icons": "^13.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

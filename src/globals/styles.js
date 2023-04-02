@@ -1,7 +1,11 @@
-import  {getStatusBarHeight}  from 'react-native-status-bar-height';
-import { Dimensions } from 'react-native';
+import { StatusBar,Dimensions,StyleSheet } from 'react-native';
+const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBar.currentHeight;
+
+
+
+
 export const colors={
-    orange:'#FF8C01',
+    ThemeBlack:'#111111',
 
     grey:'#28231F',
     grey2:'#748c94',
@@ -11,7 +15,7 @@ export const colors={
 }
 
 export const parameters={
-    statusBarHeight :getStatusBarHeight(),
+    statusBarHeight :STATUSBAR_HEIGHT,
     headerHeight:90,
     SCREEN_WIDTH:Dimensions.get('window').width,
     SCREEN_HEIGHT:Dimensions.get('window').height
@@ -19,6 +23,74 @@ export const parameters={
 export const errors={
     fontColor:'red'
 }
+export const globalStyles = StyleSheet.create({
+    button1:{
+        height:50,
+        width:350,
+        backgroundColor:colors.ThemeBlack,
+        borderRadius:50,
+        alignItems:"center",
+        justifyContent:"center",
+        // marginTop:50
+    },
+    button1Text:{
+        color:colors.white,
+        fontSize:22,
+        fontFamily:'Roboto',
+        marginTop:-2
+    },
+    alreadyContainer:{
+        display:"flex",
+        flexDirection:"row",
+        justifyContent:"center",
+        alignItems:"center",
+        marginTop:20
+    },
+    button2:{
+        alignSelf:'center',
+        alignItems:"center",
+        justifyContent:"center",
+    },
+    button2Text:{
+        color:colors.font,
+        fontSize:20,
+        fontWeight:'bold',
+        textDecorationLine:"underline",
+        fontFamily:'Roboto',
+        marginTop:-2
+    },
+    smallText:{
+        fontSize:20,
+        alignSelf:'center',
+        marginRight:10
+    },
+    backBtnContainer:{
+        width:parameters.SCREEN_WIDTH,
+        height:80,
+        display:"flex",
+        padding:15,
+        justifyContent:"center"
+
+    },
+    backBtn:{
+        width:25,
+        height:20
+    },
+    input: {
+        borderColor: "#F1F2F3",
+        borderWidth: 1,
+        padding:15,
+        paddingLeft:20,
+        borderRadius: 50,
+        marginBottom:10,
+        height:60,
+        backgroundColor:"#F1F2F3"
+    },
+    txtInputIcon:{
+        width:20,
+        height:20
+    }
+})
 
 // export const mapStyle=[
 //   {
