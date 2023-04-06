@@ -16,7 +16,7 @@ const HomePage = () => {
     const onChangeSearch = (query)=> setSearchQuery(query);
     return (
         <View style={styles.mainContainer}>
-            <ScrollView style={styles.scrollViewContainer}>
+            
                 <View style={styles.upperContainer}>
                     <View style={styles.notificationContainer}>
                         <NotificationContainer/>
@@ -34,6 +34,7 @@ const HomePage = () => {
                         </TouchableOpacity> 
                     </View>
                 </View>
+            <ScrollView style={styles.scrollViewContainer}>
                 <View style={styles.lowerContainer}>
                     <Text style={styles.popularTrips}>Popular Trips</Text>
                     <View style={styles.grid}>
