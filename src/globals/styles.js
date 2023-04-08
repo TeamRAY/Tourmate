@@ -6,11 +6,12 @@ const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBar.currentHeight;
 
 export const colors={
     ThemeBlack:'#111111',
-
-    grey:'#28231F',
+    
+    grey:'#34363A',
     grey2:'#748c94',
     white:'#f2f2f2',
     font:'#090807',
+
     midBoxWhite:'#ffffff'
 }
 

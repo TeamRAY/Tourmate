@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import { StyleSheet, Text, View,TouchableOpacity,TextInput,Image } from 'react-native'
-import BackBtnContainer from '../components/BackBtnContainer'
 import { Searchbar } from 'react-native-paper';
 import MapView, { Callout, Marker,mapStyle } from "react-native-maps";
 import { colors, parameters,globalStyles } from '../globals/styles'
