@@ -6,6 +6,8 @@ import LogIn from './src/screens/LogIn';
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SignUp from './src/screens/SignUp';
+import Alternatives from './src/screens/Alternatives';
+import Description from './src/screens/Description';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +15,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Description" component={Description} />
+        <Stack.Screen name="Alternatives" component={Alternatives} />
         <Stack.Screen name="TabNavigator" component={TabNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
